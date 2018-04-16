@@ -1,0 +1,6 @@
+sql 创建时间列
+在创建时 加入  [CreatedTime] TimeStamp NOT NULL DEFAULT (datetime('now','local
+time')) 
+列名为 CreatedTime 
+例子：
+CREATE TABLE "text"(MAC TEXT PRIMARY KEY NOT NULL,Time INT ,D1 REAL NOT NULL,D2  REAL NOT NULL,[CreatedTime] TimeStamp NOT NULL DEFAULT (datetime('now','localtime')));
